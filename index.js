@@ -12,7 +12,7 @@ function recursiveReaddirSync(path) {
   files.forEach(function (file) {
     stats = fs.lstatSync(p.join(path, file));
     if(stats.isDirectory()) {
-      list = list.concat(readdirSync(p.join(path, file)));
+      list = list.concat(recursiveReaddirSync(p.join(path, file)));
     } else {
       list.push(p.join(path, file));
     }
