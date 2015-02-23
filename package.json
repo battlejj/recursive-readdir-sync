@@ -1,6 +1,6 @@
 {
   "name": "recursive-readdir-sync",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "NodeJS library to recursively read a directory path's contents synchronously",
   "main": "index.js",
   "scripts": {
@@ -24,5 +24,13 @@
   "bugs": {
     "url": "https://github.com/battlejj/recursive-readdir-sync/issues"
   },
-  "homepage": "https://github.com/battlejj/recursive-readdir-sync"
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "lodash": "^3.3.0",
+    "mocha": "^1.21.4"
+  },
+  "homepage": "https://github.com/battlejj/recursive-readdir-sync",
+  "dependencies": {
+    "mocha": "^2.1.0"
+  }
 }
