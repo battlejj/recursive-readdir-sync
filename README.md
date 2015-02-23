@@ -1,22 +1,27 @@
-# recursive-readdir-sync
+recursive-readdir-sync
+======================
 NodeJS library to recursively read a directory path's contents synchronously
 
 A simple Node module for synchronously listing all files in a directory, or in any subdirectories.
 
 It does not list directories themselves.
 
+This library uses synchronous filesystem calls. That means this library uses **BLOCKING** calls. Keep that in mind
+when using it.
+
 ```
 npm install recursive-readdir-sync
 ```
 
-###Example
+Example
+=======
 ```javascript
 var recursiveReadSync = require('recursive-read-sync')
   , files
   ;
 
 try {
-  files = recursiveReadSync('./your/path/here');
+  files = recursiveReadSync('/your/path/here');
 } catch(err){
   if(err.errno === 34){
     console.log('Path does not exist');
