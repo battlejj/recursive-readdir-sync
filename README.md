@@ -9,12 +9,15 @@ It does not list directories themselves.
 This library uses synchronous filesystem calls. That means this library uses **BLOCKING** calls. Keep that in mind
 when using it.
 
+Install
+-------
+
 ```
 npm install recursive-readdir-sync
 ```
 
 Example
-=======
+-------
 ```javascript
 var recursiveReadSync = require('recursive-read-sync')
   , files

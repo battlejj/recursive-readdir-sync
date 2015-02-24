@@ -1,6 +1,6 @@
 {
   "name": "recursive-readdir-sync",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "NodeJS library to recursively read a directory path's contents synchronously",
   "main": "index.js",
   "scripts": {
