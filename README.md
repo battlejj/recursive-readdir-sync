@@ -19,7 +19,7 @@ npm install recursive-readdir-sync
 Example
 -------
 ```javascript
-var recursiveReadSync = require('recursive-read-sync')
+var recursiveReadSync = require('recursive-readdir-sync')
   , files
   ;
 
