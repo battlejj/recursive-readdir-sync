@@ -25,6 +25,10 @@ var recursiveReadSync = require('recursive-readdir-sync')
 
 try {
   files = recursiveReadSync('/your/path/here');
+  
+  // optional
+  files = recursiveReadSync('/your/path/here', ['excluded folder1','excluded folder2']);
+
 } catch(err){
   if(err.errno === 34){
     console.log('Path does not exist');
