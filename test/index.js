@@ -29,7 +29,7 @@ describe('Functionality testing.', function(){
     return path.resolve(__dirname, f);
   });
 
-  var results = recursiveReaddirSync(__dirname + '/nested');
+  var results = recursiveReaddirSync(__dirname + '/nested',['exclude folder']);
 
   it('should return an array with length equal to that of expectedFiles', function(){
       expect(results).to.have.length(expectedFiles.length);
